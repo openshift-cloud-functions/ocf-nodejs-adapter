@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo /opt/app-root/src
+ls -R /opt/app-root/src
+
+echo "running assemble-nodejs in $PWD"
+ls -R
+/usr/libexec/s2i/assemble-nodejs
+echo "completed assemble-nodejs"
+
+#npm link ocf-nodejs-adapter
+
+echo $PWD
+ls -R
+
+
